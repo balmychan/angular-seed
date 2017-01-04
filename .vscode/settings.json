@@ -1,0 +1,15 @@
+{
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "tslint.enable": true,
+    "tslint.configFile": "./tslint.json",
+    "css.validate": true,
+    "javascript.validate.enable": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/.DS_Store": true,
+        "**/*.js.map": true,
+        "**/*.js": {"when": "$(basename).ts"}
+    }
+}

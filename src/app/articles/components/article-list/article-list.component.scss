@@ -1,0 +1,64 @@
+:host {
+  display: block;
+  overflow: hidden;
+}
+
+.article_list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+
+    &.column {
+      flex-direction: column;
+    }
+}
+
+.article_list-section {
+  transition: 400ms;
+  width: 33.3333%;
+  padding: 0 5px;
+  margin-bottom: 40px;
+
+  .column > & {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1700px) {
+    width: 25%;
+  }
+}
+
+
+// Item
+.article_list_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: 20px 30px;
+
+  &.summary {
+    margin-top: 8px;
+    padding: 0;
+  }
+}
+
+.title {
+  transition: 400ms;
+  font-size: 18px;
+  line-height: 24px;
+
+  .article_list_item:hover & {
+    color: #00a0e9;
+  }
+
+  .content.summary & {
+    font-size: 14px;
+    font-weight: normal;
+  }
+}
+
+.description {
+  line-height: 24px;
+}

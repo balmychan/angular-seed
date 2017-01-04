@@ -1,0 +1,44 @@
+:host {
+    display: block;
+    padding-top: 20px;
+}
+
+.back {
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.back-button {
+    font-size: 16px;
+    font-weight: 100;
+    transition: 400ms;
+
+    &:hover {
+        color: #00a0e9;
+    }
+}
+
+.body {
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main {
+    width: 800px;
+}
+
+.aside {
+    width: 240px;
+}
+
+.aside-header {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
+    font-size: 15px;
+}
